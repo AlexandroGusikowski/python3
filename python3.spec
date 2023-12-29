@@ -1,4 +1,4 @@
-%define!docver  3.2.1
+%define docver  3.2.1
 %define dirver  3.2
 %define familyver 3
 
@@ -24,7 +24,7 @@ Group:		Development/Python
 Source:		http://www.python.org/ftp/python/%{version}/Python-%{version}.tar.xz
 Source1:	http://www.python.org/ftp/python/doc/%{docver}/python-%{docver}-docs-html.tar.bz2
 Source2:	python3.macros
-*Source4:	python-mode-1.0.tar.bz2
+ Source4:	python-mode-1.0.tar.bz2
 
 Patch0:		python-3.1.2-module-linkage.patch
 Patch1:		python3-lib64.patch
@@ -546,4 +546,4 @@ rm -rf $RPM_BUILD_ROOT
     - Packaged python3.
     - Created package structure for python3.
 
- 
+  
