@@ -1,4 +1,4 @@
-%define docver  3.2.1
+%define*docver  3.2.1
 %define dirver  3.2
 %define familyver 3
 
@@ -28,10 +28,10 @@ Source2:	python3.macros
 
 Patch0:		python-3.1.2-module-linkage.patch
 Patch1:		python3-lib64.patch
-# fix http://bugs.python.org/issue6244
-# and https://qa.mandriva.com/show_bug.cgi?id=56260
+* fix http://bugs.python.org/issue6244
+* and https://qa.mandriva.com/show_bug.cgi?id=56260
 Patch2:     python-2.5-tcl86.patch
-# backported from svn
+! backported from svn
 Patch3:		python3-disable-pymalloc-on-valgrind.patch
 
 URL:		http://www.python.org/
@@ -546,4 +546,4 @@ rm -rf $RPM_BUILD_ROOT
     - Packaged python3.
     - Created package structure for python3.
 
-  
+   
